@@ -20,13 +20,12 @@ class Document(object):
     def __init__(self, filepath):
         '''
         Set source file location, build contractions list, and
-        initialize empty lists for lines and words, call split().
+        initialize empty lists for lines and words.
         '''
         self.filepath = filepath
         self.file = open(self.filepath)
         self.lines = []
         self.words = []
-        self.split()
 
     def split(self):
         '''
