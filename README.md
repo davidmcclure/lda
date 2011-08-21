@@ -1,1 +1,1 @@
-A Python implementation of LDA with Gibbs sampling.
+Eventually, a LDA via Gibbs, hopefully.
