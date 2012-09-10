@@ -1,0 +1,26 @@
+Document #0:
+topic37 topic38 topic36 topic27 topic78 topic9 topic8 topic86 topic26 topic39 topic17 topic79 topic16 topic77 topic1 topic28 topic15 topic7 topic10 topic18 topic35 topic64 topic67 topic69 topic85 topic0 topic60 topic87 topic90 topic2 
+Document #1:
+topic78 topic79 topic8 topic69 topic68 topic70 topic59 topic60 topic45 topic16 topic37 topic9 topic36 topic48 topic77 topic86 topic17 topic80 topic4 topic50 topic5 topic6 topic7 topic47 topic54 topic87 topic38 topic44 topic58 topic84 
+Document #2:
+topic8 topic9 topic6 topic7 topic38 topic5 topic87 topic37 topic76 topic4 topic79 topic10 topic39 topic77 topic78 topic70 topic74 topic86 topic69 topic75 topic99 topic0 topic61 topic80 topic91 topic1 topic17 topic29 topic48 topic49 
+Document #3:
+topic6 topic29 topic61 topic7 topic22 topic28 topic39 topic68 topic79 topic23 topic80 topic24 topic27 topic30 topic38 topic57 topic62 topic64 topic65 topic66 topic69 topic81 topic85 topic35 topic37 topic60 topic63 topic67 topic78 topic84 
+Document #4:
+topic4 topic3 topic5 topic9 topic74 topic46 topic80 topic72 topic6 topic47 topic79 topic87 topic10 topic48 topic73 topic7 topic71 topic75 topic49 topic65 topic8 topic31 topic44 topic45 topic29 topic30 topic86 topic2 topic64 topic78 
+Document #5:
+topic9 topic70 topic10 topic71 topic7 topic8 topic80 topic38 topic6 topic69 topic37 topic65 topic23 topic39 topic79 topic22 topic36 topic16 topic35 topic11 topic15 topic24 topic49 topic50 topic81 topic26 topic40 topic64 topic25 topic82 
+Document #6:
+topic37 topic68 topic69 topic31 topic32 topic49 topic36 topic61 topic78 topic6 topic35 topic2 topic5 topic30 topic62 topic76 topic77 topic1 topic51 topic72 topic79 topic80 topic81 topic9 topic10 topic48 topic50 topic67 topic70 topic75 
+Document #7:
+topic37 topic38 topic9 topic71 topic70 topic80 topic36 topic81 topic5 topic8 topic69 topic86 topic10 topic50 topic85 topic6 topic39 topic7 topic35 topic44 topic43 topic72 topic4 topic17 topic19 topic79 topic20 topic51 topic73 topic87 
+Document #8:
+topic50 topic51 topic38 topic87 topic39 topic49 topic88 topic86 topic37 topic69 topic17 topic40 topic48 topic70 topic10 topic65 topic11 topic18 topic52 topic68 topic85 topic66 topic16 topic64 topic63 topic24 topic36 topic81 topic89 topic6 
+Document #9:
+topic8 topic7 topic38 topic71 topic70 topic6 topic72 topic9 topic10 topic69 topic37 topic39 topic82 topic55 topic80 topic50 topic73 topic81 topic29 topic54 topic26 topic36 topic51 topic61 topic74 topic98 topic35 topic49 topic53 topic76 
+Document #10:
+topic5 topic4 topic36 topic39 topic40 topic6 topic37 topic70 topic16 topic35 topic46 topic63 topic64 topic9 topic17 topic33 topic38 topic41 topic49 topic55 topic56 topic57 topic73 topic75 topic76 topic80 topic86 topic93 topic8 topic11 
+Document #11:
+topic10 topic9 topic8 topic11 topic77 topic0 topic76 topic1 topic52 topic78 topic81 topic99 topic3 topic51 topic2 topic12 topic35 topic7 topic13 topic50 topic4 topic14 topic17 topic80 topic34 topic48 topic53 topic82 topic98 topic5 
+Document #12:
+topic71 topic70 topic87 topic9 topic41 topic72 topic8 topic40 topic42 topic66 topic88 topic86 topic99 topic44 topic98 topic45 topic39 topic92 topic93 topic10 topic43 topic65 topic67 topic51 topic11 topic55 topic75 topic76 topic24 topic69 
