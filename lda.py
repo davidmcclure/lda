@@ -1,5 +1,21 @@
 import re
 import numpy as np
+from utils import choose
+
+"""
+Author: 
+davidmcclure (https://github.com/davidmcclure)
+Alex Kong (https://github.com/hitalex)
+
+Reference:
+Gibbs sampling update
+@article{heinrich2005parameter,
+  title={Parameter estimation for text analysis},
+  author={Heinrich, G.},
+  journal={Web: http://www.arbylon.net/publications/text-est.pdf},
+  year={2005}
+}
+"""
 
 np.set_printoptions(threshold='nan')
 
@@ -92,6 +108,7 @@ class Corpus(object):
             for word in document.words:
                 discrete_set.add(word)
         self.vocabulary = list(discrete_set)
+        
 
 
     def lda(self, number_of_topics, iterations, alpha, beta):
@@ -99,7 +116,7 @@ class Corpus(object):
         '''
         Model topics.
         '''
-
+        print "Gibbs sampling process..."
         # Get vocabulary and number of documents.
         self.build_vocabulary()
         number_of_documents = len(self.documents)
@@ -112,13 +129,14 @@ class Corpus(object):
         self.topic_counts = np.zeros(number_of_topics)
 
         # Initialize
+        print "Initializing..."
         for d_index, document in enumerate(self.documents):
             word_topic_assignments = []
             for word in document.words:
                 if word in self.vocabulary:
                     # Select random starting topic assignment for word.
                     w_index = self.vocabulary.index(word)
-                    starting_topic_index = np.random.randint(number_of_topics)
+                    starting_topic_index = np.random.randint(number_of_topics) # randomly assign topic to every word
                     word_topic_assignments.append(starting_topic_index)
                     # Set current topic assignment, increment doc-topic and word-topic counters.
                     self.document_topic_counts[d_index, starting_topic_index] += 1
@@ -128,6 +146,7 @@ class Corpus(object):
 
         # Run the sampler.
         for iteration in range(iterations):
+            print "Iteration #" + str(iteration + 1) + "..."
             for d_index, document in enumerate(self.documents):
                 for w, word in enumerate(document.words):
                     if word in self.vocabulary:
@@ -141,8 +160,10 @@ class Corpus(object):
                         # Get new topic.
                         topic_distribution = (self.topic_word_counts[:, w_index] + beta) * \
                             (self.document_topic_counts[d_index] + alpha) / \
-                            (self.topic_counts[current_topic_index] + beta)
-                        new_topic_index = np.random.multinomial(1, np.random.dirichlet(topic_distribution)).argmax()
+                            (self.topic_counts[current_topic_index] + vocabulary_size * beta) # changed by Alex Kong
+                        #new_topic_index = np.random.multinomial(1, np.random.dirichlet(topic_distribution)).argmax()
+                        # choose a new topic index according to topic distribution
+                        new_topic_index = choose(range(number_of_topics), topic_distribution)
                         # Reassign and notch up counts.
                         self.current_word_topic_assignments[d_index][w] = new_topic_index
                         self.document_topic_counts[d_index, new_topic_index] += 1
