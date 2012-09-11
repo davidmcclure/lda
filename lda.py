@@ -59,7 +59,7 @@ class Document(object):
             words = line.split(' ')
             for word in words:
                 clean_word = self._clean_word(word)
-                if clean_word and (word not in STOP_WORDS_SET) and (len(clean_word) > 1): # omit stop words
+                if clean_word and (clean_word not in STOP_WORDS_SET) and (len(clean_word) > 1): # omit stop words
                     self.words.append(clean_word)
 
 
@@ -160,7 +160,7 @@ class Corpus(object):
                         # Get new topic.
                         topic_distribution = (self.topic_word_counts[:, w_index] + beta) * \
                             (self.document_topic_counts[d_index] + alpha) / \
-                            (self.topic_counts[current_topic_index] + vocabulary_size * beta) # changed by hitalex
+                            (self.topic_counts + beta) # changed by hitalex
                         #new_topic_index = np.random.multinomial(1, np.random.dirichlet(topic_distribution)).argmax()
                         # choose a new topic index according to topic distribution
                         new_topic_index = choose(range(number_of_topics), topic_distribution)

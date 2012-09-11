@@ -79,8 +79,8 @@ def main(argv):
     max_iterations = int(argv[4])
     corpus.lda(number_of_topics, max_iterations, alpha, beta)
     
-    print_topic_word_distribution(corpus, number_of_topics, 50, "./topic-word.txt")
-    print_document_topic_distribution(corpus, number_of_topics, 30, "./document-topic.txt")
+    print_topic_word_distribution(corpus, number_of_topics, 20, "./topic-word.txt")
+    print_document_topic_distribution(corpus, number_of_topics, 10, "./document-topic.txt")
     
 if __name__ == "__main__":
     main(sys.argv)
